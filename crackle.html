@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CracklePop</title>
+    <style>
+    body {
+        background-color: rgb(85, 199, 214);}
+    
+   
+
+    h1  {
+        color: blue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+        text-align: center;
+     
+        }
+    
+    p, h2   {
+        color: rgb(224, 11, 11);
+        font-size: 120%;
+        text-align: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+       
+        }
+
+    button {
+      background-color: rgb(243, 189, 201);
+      text-align: center;
+      font-size: 16px;
+      }
+
+</style>
+</head>
+<body>
+    <br>
+
+    <h1>Crackle Pop</h1>
+    <h2>Pick a number from 1 to 100</h2>
+    <br>
+    <center><input type="number" id="x"> </center> 
+    <br>
+    <br>
+    <center><button onclick="pop()">Click Me</button> </center>  
+  
+    <br>
+    <br>
+    <center><h2>Result</h2></center>
+    <p id="onClick"></p>
+      
+    <script>
+   
+ 
+
+    function pop(){
+        
+        var x = document.getElementById ("x").value;
+    
+        if (x % 3 == 0 && x % 5 == 0) {
+            document.getElementById('onClick').innerHTML = "Crackle Pop";
+        
+
+        }else if (x % 3 == 0 ) {
+       
+            document.getElementById('onClick').innerHTML = "Crackle";
+       
+        }else if (x % 5 == 0){
+       
+            document.getElementById('onClick').innerHTML = "Pop";
+        
+        
+        }else {
+         
+           document.getElementById('onClick').innerHTML = "Invalid";
+        
+        } 
+
+
+    }
+  
+
+
+
+    </script>    
+
+</body>
+</html>
